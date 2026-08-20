@@ -1,10 +1,11 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CheckCircle2, GraduationCap, Briefcase, Award } from "lucide-react";
+import { SplineScene } from "../ui/splite";
+import { Spotlight } from "../ui/spotlight";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -62,14 +63,14 @@ export default function About() {
         {/* LEFT: Image + Quick Stats */}
         <div className="lg:col-span-5 flex flex-col gap-5">
           <div className="about-reveal opacity-0 translate-y-8 relative w-full aspect-[4/5] rounded-[2rem] overflow-hidden glass border border-slate-700/50 shadow-2xl">
-            <Image
-              src="/profile.jpg"
-              alt="Vikas Prajapat"
-              fill
-              className="object-cover object-center grayscale hover:grayscale-0 hover:scale-105 transition-all duration-700"
-              sizes="(max-width: 768px) 100vw, 420px"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-transparent to-transparent" />
+            <Spotlight className="-top-40 left-0 md:left-20 md:-top-20" fill="white" />
+            <div className="absolute inset-0">
+              <SplineScene
+                scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
+                className="w-full h-full"
+              />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent pointer-events-none" />
             <div className="absolute bottom-5 left-5 right-5">
               <p className="text-white text-lg font-black">Vikas Prajapat</p>
               <p className="text-orange-300 text-xs font-semibold">B.E. Computer Science • Chandigarh University</p>
@@ -86,7 +87,7 @@ export default function About() {
             <div className="about-reveal opacity-0 translate-y-8 glass p-4 rounded-2xl">
               <Award className="w-5 h-5 text-violet-400 mb-1.5" />
               <p className="text-[10px] text-slate-500 font-bold uppercase">CGPA</p>
-              <p className="text-sm font-extrabold text-white">7.81 / 10</p>
+              <p className="text-sm font-extrabold text-white">7.84 / 10</p>
             </div>
           </div>
         </div>

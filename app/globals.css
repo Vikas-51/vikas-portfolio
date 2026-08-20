@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #f8fafc;
+    --foreground: #0f172a;
+    --card-bg: rgba(255, 255, 255, 0.82);
+    --card-border: rgba(203, 213, 225, 0.7);
+    --primary: #ea580c;
+    --primary-glow: rgba(234, 88, 12, 0.12);
+    --accent: #8b5cf6;
+    --muted: #64748b;
+  }
+
+  .dark {
+    --background: #030712;
+    --foreground: #f1f5f9;
+    --card-bg: rgba(15, 23, 42, 0.88);
+    --card-border: rgba(51, 65, 85, 0.6);
+    --primary: #fb923c;
+    /* orange-400 */
+    --primary-glow: rgba(251, 146, 60, 0.12);
+    --accent: #a78bfa;
+    /* violet-400 */
+    --muted: #94a3b8;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: initial;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  min-height: 100%;
+  color: var(--foreground);
+  overflow-x: hidden;
+  transition: background-color 0.4s ease, color 0.3s ease;
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.6);
+}
+
+/* Subtle dot grid */
+.grid-bg {
+  background-image: radial-gradient(rgba(148, 163, 184, 0.15) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.dark .grid-bg {
+  background-image: radial-gradient(rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Glass card — high opacity so text is always readable */
+.glass {
+  background-color: var(--card-bg);
+  backdrop-filter: blur(20px) saturate(1.4);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  border: 1px solid var(--card-border);
+}
+
+/* Mouse cursor glow */
+.cursor-tracer {
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Gradient text — uses warm amber/violet so it pops on ANY background */
+.gradient-text {
+  background: linear-gradient(135deg, #f59e0b 0%, #f97316 30%, #ec4899 65%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Teal glow shadow */
+.glow-teal {
+  box-shadow: 0 0 40px -8px rgba(20, 184, 166, 0.3);
+}
+
+/* Section header badge */
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}

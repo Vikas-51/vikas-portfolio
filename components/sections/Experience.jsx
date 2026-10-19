@@ -14,8 +14,8 @@ const EXPERIENCES = [
     role: "Frontend Developer & UI/UX Developer",
     company: "Sukrut Associates",
     location: "Jaipur, India",
-    period: "Aug 2025 – Jul 2026",
-    badge: "Full-Time • 11 Months",
+    period: "Aug 2025 – Aug 2026",
+    badge: "Full-Time • 1 Year",
     bullets: [
       { title: "thesukrut.com", desc: "Built with Next.js App Router + SSR; implemented on-page SEO (semantic HTML5, meta, Open Graph, structured data) to improve crawlability and search visibility." },
       { title: "SwellSign (swellsign.com)", desc: "Engineered multi-step e-signature flow with GSAP micro-animations — 60fps transitions across all device breakpoints." },

@@ -14,12 +14,12 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Vikas Prajapat | Frontend Developer & UI/UX Designer",
-  description: "Frontend Developer & UI/UX Designer with 11 months of experience building 60fps, interactive, SEO-optimised web applications using Next.js, React.js, and GSAP.",
+  description: "Frontend Developer & UI/UX Designer with 1 Year of experience building 60fps, interactive, SEO-optimised web applications using Next.js, React.js, and GSAP.",
   keywords: ["Vikas Prajapat", "Frontend Developer", "UI/UX Designer", "Next.js", "React.js", "GSAP Animations", "Three.js Portfolio", "SwellSign", "Sukrut"],
   authors: [{ name: "Vikas Prajapat" }],
   openGraph: {
     title: "Vikas Prajapat | Frontend Developer & UI/UX Designer",
-    description: "Frontend Developer & UI/UX Designer with 11 months of experience building 60fps, interactive, SEO-optimised web applications using Next.js, React.js, and GSAP.",
+    description: "Frontend Developer & UI/UX Designer with 1 Year of experience building 60fps, interactive, SEO-optimised web applications using Next.js, React.js, and GSAP.",
     url: "https://github.com/Vikas-51",
     siteName: "Vikas Prajapat Portfolio",
     locale: "en_US",

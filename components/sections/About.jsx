@@ -99,7 +99,7 @@ export default function About() {
           </h3>
 
           <p className="about-reveal opacity-0 translate-y-8 text-slate-300 text-sm sm:text-base leading-relaxed">
-            I am a Frontend Developer with 11 months of professional experience building production-grade, SEO-optimised web applications using Next.js, React.js, and GSAP. Skilled at owning the full design-to-development pipeline — from Figma prototyping and UI/UX design to responsive, performant production delivery.
+            I am a Frontend Developer with 1 Year of professional experience building production-grade, SEO-optimised web applications using Next.js, React.js, and GSAP. Skilled at owning the full design-to-development pipeline — from Figma prototyping and UI/UX design to responsive, performant production delivery.
           </p>
 
           <p className="about-reveal opacity-0 translate-y-8 text-slate-300 text-sm sm:text-base leading-relaxed">
@@ -139,7 +139,7 @@ export default function About() {
                 <span className="text-xs font-bold text-orange-400">2021 – 2025</span>
               </div>
               <p className="text-xs text-slate-400 font-medium">
-                Punjab, India • CGPA: 7.81 | Class XII: 76.80% | Class X: 88.67%
+                Punjab, India • CGPA: 7.84 | Class XII: 76.80% | Class X: 88.67%
               </p>
             </div>
           </div>

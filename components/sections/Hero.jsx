@@ -45,7 +45,7 @@ export default function Hero() {
           <h2 className="hero-sub text-lg sm:text-xl md:text-2xl font-bold text-slate-200">
             Frontend Developer &amp; UI/UX Designer
             <span className="block text-sm sm:text-base font-semibold text-orange-400 mt-1">
-              ⚡ 11 Months Pro Experience • Next.js • React.js • Animation • Api Integration
+              ⚡ 1 Year Experience • Next.js • React.js • Animation • Api Integration
             </span>
           </h2>
 
@@ -106,7 +106,7 @@ export default function Hero() {
               <span className="text-lg">⚡</span>
               <div>
                 <p className="text-[9px] uppercase font-bold text-slate-400">Experience</p>
-                <p className="text-xs font-black text-white">11 Months Pro</p>
+                <p className="text-xs font-black text-white">1 Year</p>
               </div>
             </div>
 
